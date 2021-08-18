@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+}
+nav{
+    background: black;
+    height: 80px;
+    width:100%;
+}
+label.logo{
+    color:white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+}
+nav ul{
+    float: right;
+    margin-left: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding:7px 13px;
+    border-radius:3px;
+    text-transform: uppercase;
+
+}
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+
+}
+section {
+    background: url(table.jpg)no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+
+}
+        
+        body {
+            background-image:url('r.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        }
+
+        .content {
+            max-width: 800px;
+            max-height: 800px;
+            border: 100px black;
+            margin: auto;
+            background-image: url('r2.jpg') ;
+            
+        
+            padding: 10px;
+        }
+       
+    
+    </style>
+       <script>
+        function validateuser()
+        {
+            var email = document.getElementById("text").value;
+            var regx = /\S+@\S+\.\S+/g;
+
+            if(regx.test(email)){
+                alert("valid email Id")
+                return true;
+            }
+            else{
+                alert("invalid email Id")
+                return false;
+            }
+        }
+
+        
+        function validateuser()
+        {
+            var password = document.getElementById("pswd").value;
+            var regx = /^([0-9]{6})$/g;
+
+            if(regx.test(password)){
+                alert("Form Submitted Sucessfully")
+                return true;
+            }
+            else{
+                alert("Please enter valid Password")
+                return false;
+            }
+        }
+
+        
+    
+
+    </script>
+   
+</head>
+<body>
+    <div class="content">
+        
+        <nav>
+            
+            <ul>
+                <li><a href="home1.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="sign.html">Sign in</a></li>
+                <li><a href="reservation.html">Reserving Table</a></li>
+                <li><a href="about.html">About US</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                
+            </ul>
+        </nav>
+       
+        <h1><b><center>Registration Form</center></b></h1>
+        <br>
+        <br>
+    
+    <form>
+        <input id="text" placeholder="Username" type="text"><br><br><br>
+      <input id="text" placeholder="Email" type="text"><br><br><br>
+      <input id="number" placeholder="Phone number" type="number"><br><br><br>
+      <input id="pswd" placeholder="Password" type="password"><br><br><br>
+    
+      <button onClick="validateuser()" type="button">submit</button><br><br><br>
+      
+     <p><b>If you have registered already please login here <a href="login.html">login</a>    
+     </b></p>
+    </form>
+    </div>
+ 
+    
+</body>
+</html>

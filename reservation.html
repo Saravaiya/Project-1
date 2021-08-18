@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+}
+nav{
+    background:black;
+    height: 80px;
+    width:100%;
+}
+label.logo{
+    color:white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+}
+nav ul{
+    float: right;
+    margin-left: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding:7px 13px;
+    border-radius:3px;
+    text-transform: uppercase;
+
+}
+a.active,a:hover{
+    background:burlywood;
+    transition: .5s;
+
+}
+section {
+    
+    background-size: cover;
+    height: calc(100vh - 80px);
+
+}
+   body {
+            
+        background-image:url('r.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        
+        }
+        
+
+    .content {
+        max-width: 800px;
+        max-height: 800px;
+        border: 200px black;
+        margin: auto;
+        background-image:url(r2.jpg) ;
+        padding: 10px;
+    }
+</style>
+
+</head>
+<body>
+    <div class="content">
+        
+    <nav>
+         
+        <ul>
+            <li><a href="home1.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="sign.html">Sign in</a></li>
+            <li><a href="reservation.html">Reserving Table</a></li>
+            <li><a href="about.html">About US</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            
+        </ul>
+    </nav>
+   
+        <h1><b><center>RESERVING TABLE</center></b></h1>
+        <form>
+            
+       
+            <select>
+           <option value="Mr">Mr</option>
+           <option value="Mrs">Mrs</option>
+           <option value="Ms">Ms</option>
+           
+           </select>
+           <br><br>
+           <input id="text" placeholder="Firstname" type="text"><br><br>
+           <input id="text" placeholder="Lastname" type="text"><br><br>
+           <input id="text" placeholder="Email" type="text"><br><br>
+           <input id="number" placeholder="Telephone" type="number"><br><br>
+           <select>
+            <option value="six o one">Terrace</option>
+            <option value="pasha">Banquette</option>
+            <option value="aqua">Booth</option>
+            <option value="">Wall seating</option>
+          
+                </select>
+                <br><br>
+            
+                
+                    <input id="text" placeholder="No of guests" type="pswd">
+                    <select>
+                    <option value="six o one">1</option>
+                    <option value="pasha">2</option>
+                    <option value="aqua">3</option>
+                    <option value="">4</option>
+                    <option value="six o one">5</option>
+                    <option value="pasha">6</option>
+                    <option value="aqua">7</option>
+                    <option value="">8</option>
+                    </select>
+                    <br><br>
+                    <input id="Date" placeholder="Date" type="date"><br><br>
+                    
+                    <select>
+                    <option value="six o one">11am</option>
+                    <option value="six o one">12pm</option>
+                    <option value="six o one">1pm</option>
+                    <option value="pasha">2pm</option>
+                    <option value="aqua">3pm</option>
+                    <option value="">8pm</option>
+                    <option value="six o one">9pm</option>
+                    <option value="pasha">10pm</option>
+                    <option value="aqua">11pm</option>
+                    <option value="">12pm</option>
+                    </select><br><br>
+                    <input id="text" placeholder="Address" type="text"><br><br>
+                    <input type="checkbox" id="data" name="data" value="accepting">
+                    <lable for="data"> I Consent to my personal data being stored and processed for the purposes of processing my inquiry.For more information see our </lable>
+                    <br><br>
+                    <button type="button" onclick="alert('Reserved table sucessfully')" >submit</button>
+                    
+
+</form>
+
+    
+  
+
+</div>
+ 
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+}
+nav{
+    background:black;
+    height: 80px;
+    width:100%;
+}
+label.logo{
+    color:white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+}
+nav ul{
+    float: right;
+    margin-left: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding:7px 13px;
+    border-radius:3px;
+    text-transform: uppercase;
+
+}
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+
+}
+section {
+    background: url(re.jpg)no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+
+}
+        body
+            {
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+                background: url('13.jpg');
+                background-size: cover;
+
+            }
+            .box{
+                width: 300px;
+                padding: 30px;
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                background-image: url('re.jpg');
+                background-size: cover;
+
+                text-align: center;
+            }
+            .box h1
+            {
+                color: white;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            .box input[type="text"],.box input[type="password"]
+            {
+                border: 0;
+                background:whitesmoke;
+                display: block;
+                margin: 20px auto;
+                text-align: center;
+                
+                font-weight: 700;
+                border:3px solid blue;
+                padding: 14px 10px;
+                width:220px;
+                outline:none;
+               color:black;
+                border-radius: 24px;
+                transition:0.25px;
+            }
+
+            .box input[type="text"]:focus,.box input[type="password"]:focus{
+
+                width: 270px;
+                border-color: yellow;
+            }
+            .box input[type="submit"]{
+                border: 0;
+                background: none;
+                display: block;
+                margin: 20px auto;
+                text-align: center;
+                border:3px solid yellowgreen;
+                padding: 14px 35px;
+                outline: none;
+                color: white;
+                border-radius: 24px;
+                transition:0.25px;
+                cursor:pointer;
+
+            }
+            .box input[type="submit"]:hover{
+                background: yellow;
+            }
+        </style>
+            <script>
+                function validate()
+                {
+                    var username = document.getElementById("text").value;
+            var regx = /\S+@\S+\.\S+/g;
+
+            if(regx.test(username)){
+                alert("valid email Id")
+                return true;
+            }
+            else{
+                alert("invalid email Id")
+                return false;
+            }
+        }
+            
+        function validate()
+        {
+            var password = document.getElementById("password").value;
+            var regx = /^([0-9]{6})$/g;
+
+            if(regx.test(password)){
+                alert("login sucessful")
+                return true;
+            }
+            else{
+                alert("Please enter valid Password")
+                return false;
+            }
+        }
+
+            </script>
+            </head>
+<body>
+    <nav>
+        
+        <ul>
+            <li><a href="home1.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="sign.html">Sign in</a></li>
+            <li><a href="reservation.html">Reserving Table</a></li>
+            <li><a href="about.html">About US</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            
+        </ul>
+    </nav>
+    <section></section>
+    <form class="box" action="login.html" method="POST">
+        <h1>login</h1>
+        <input id="text" placeholder="Username" type="text">
+      <input id="password" placeholder="Password" type="password">
+    
+      <input type="submit" value="Login"onclick="validate()">
+      
+    </form>
+    
+</body>
+</html>

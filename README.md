@@ -44,14 +44,14 @@ In   Reserving table  in page  we  have following  fields
 •	 Time select Field
 •	Address  Field
 By giving our information in  this field we  can reserve a table for the party .Alert  button is also given if we click submit it will  alert message  like form submitted successfully.
+![Screenshot (54)](https://user-images.githubusercontent.com/88303858/129816929-3ee9c6fa-cf12-4b4a-8f88-5c6888924db9.png)
                               ABOUT US  PAGE 
 In About us  page we are having some  basic informations  like 
-	where  the  restaurant is located  and whether parking and transportation  is  available or not.
+
 	And  Days and  timings of the restaurant  for  Lunch and dinner.
-	And whether  catering is available or not.
-	And gift cards are available or not  for the guests.
- 
+and dishes available in our restaurent.
 These informations  are available in About us Page.
+![Screenshot (55)](https://user-images.githubusercontent.com/88303858/129816934-6ccf5856-b544-43ac-afcf-1b7ada129a79.png)
 
 
                 CONTACT US  PAGE
@@ -59,4 +59,5 @@ In Contact t us  page we are having some  basic informations  like
 	Restaurant  Location.
 	Facebook  id
 
-	And Form to send the queries
+	And Form to send the queries.
+![Screenshot (56)](https://user-images.githubusercontent.com/88303858/129816940-71c4cfce-91ee-4abf-96c8-60e9251225bd.png)

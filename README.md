@@ -10,6 +10,7 @@ My  project  is containing  Six   Html  web pages  comprises  of   Javascript, E
 
                                           HOME  PAGE
  In Home page there are nearly  Six  External  links in which if we click the link it will  navigate to the  particular  page   for    eg:  if we click  login  link it  will  navigate to the login  page .
+ ![Screenshot (51)](https://user-images.githubusercontent.com/88303858/129816489-96023202-52c5-4786-b81b-9037ab15d32e.png)
                
 
                                         SIGNING IN  PAGE
